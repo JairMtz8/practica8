@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - GameHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.faq-question');
+            
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="faq-main">
+        <h1>Preguntas Frecuentes</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo compro juegos en GameHub?</div>
+            <div class="faq-answer">
+                <p>Selecciona el juego que deseas comprar, añádelo al carrito y completa el proceso de pago. Recibirás un código de descarga por correo electrónico que podrás canjear en tu consola Xbox Series S.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Los juegos son compatibles con Xbox Series X?</div>
+            <div class="faq-answer">
+                <p>Sí, todos los juegos que vendemos son compatibles con Xbox Series X|S, a menos que se indique lo contrario en la descripción del producto.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Qué métodos de pago aceptan?</div>
+            <div class="faq-answer">
+                <p>Aceptamos tarjetas de crédito/débito (Visa, MasterCard, American Express), PayPal y criptomonedas seleccionadas.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Ofrecen reembolsos?</div>
+            <div class="faq-answer">
+                <p>Debido a la naturaleza de los productos digitales, solo ofrecemos reembolsos en casos excepcionales y según nuestra política de reembolsos.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo activo mi suscripción a Game Pass?</div>
+            <div class="faq-answer">
+                <p>Al comprar Game Pass a través de GameHub, recibirás un código que podrás canjear en la tienda de Microsoft. Te enviaremos instrucciones detalladas por correo electrónico.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">¿Tienen soporte técnico para problemas con juegos?</div>
+            <div class="faq-answer">
+                <p>Sí, nuestro equipo de soporte puede ayudarte con problemas técnicos básicos. Para problemas más complejos, te recomendamos contactar directamente al soporte de Xbox.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 GameHub - Todos los derechos reservados</p>
+        <p>Xbox, Xbox Series S son marcas registradas de Microsoft</p>
+    </footer>
+</body>
+</html>
